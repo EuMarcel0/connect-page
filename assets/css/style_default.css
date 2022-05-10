@@ -1,0 +1,1103 @@
+/* FONT FAMILY */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif !important;
+    overflow-x: hidden !important;
+}
+
+.preloader {
+    background-color: #456521 !important;
+}
+
+/* -------- AREA NAV - MENU -------- */
+
+/* CONTACT FAST*/
+
+.contactFast{
+    background-color: #83b827;
+    height: 50px;
+}
+.contactFastArea{
+    display: flex;
+    align-items: center;
+    height:100%;
+}
+.contactFastArea a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 100%;
+    color: #517622;
+    text-align: center;
+    border-left: 1px solid #5276225b;
+    border-right: 1px solid #5276225b;
+    margin-right: 20px;
+}
+.contactFastArea i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    width: 40px;
+    height: 100%;
+    color: #517622;
+    text-align: center;
+}
+.contactFastArea .emailFrom{
+    color: #FFF;
+}
+.contactFastArea .phoneFrom{
+    color: #FFF;
+}
+.phoneIcon{
+    border-left: 1px solid #5276225b;
+    margin-left: 10px;
+}
+.contactFastArea a:hover{
+    opacity: .7;
+}
+.contactFastArea a i{
+    font-size: 3rem;
+}
+
+.menuArea{
+    padding:0;
+    margin: 0 !important;
+    background-color: #8AC02B !important;
+}
+nav .container{
+    display:flex;
+    align-items:center;
+    /* justify-content: space-between; */
+}
+.logoArea a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.logoArea img{
+    width: 120px;
+}
+nav .row{
+    width: 100%;
+}
+.content--menuArea{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0;
+}
+.button{
+    font-weight: bold;
+    display:block;
+    justify-content:center;
+    align-items:center;
+    width: 100px;
+    border:0;
+    color: #FFF;
+    border-radius: 2px;
+    background-color: #527327;
+    padding:10px 30px !important;
+    position: absolute;
+    right: 30px;
+    top:30px;
+}
+.positionButton{
+    position: absolute;
+    top: 27px;
+    right: -50px;
+}
+.positionButton:hover{
+    background-color: #E2F460 !important;
+    color: #000 !important;
+}
+.button-mobile,
+.menuMobile--area{
+    display: none;
+}
+nav ul li{
+    height:100px;
+    display:flex;
+    align-items: center;
+    color: #FFF !important;
+}
+
+.menuArea--items ul li .menuArea--item{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    line-height: 60px;
+    transition: all 0.4s ease !important;
+}
+nav ul li a{
+    color: #FFF !important;
+}
+
+nav li .menuArea--item:hover{
+    color: #121310 !important;
+    height:100px;
+    display: inline-block;
+    border-radius: 2px;
+    border-bottom: 1px solid #699223;
+}
+
+ /* ------ ASIDE AREA - MOBILE ------ */
+    
+ aside{
+    position: fixed;
+    right: 0;
+    top: 175px;
+    bottom: 0;  
+    background-color: #8AC02B;
+    width:0px;
+    z-index: 999;
+    transition: all ease .2s;
+    height: calc(100vh - 70px);
+    box-sizing: border-box!important;
+}
+.positionButton{
+    display: none;
+}
+
+.light{
+    background-color: rgb(233, 230, 230);
+    width: 100vw;
+
+}
+
+/* ---- AREA BANNERTOP ---- */
+
+#bannerTop{
+    display: flex;
+    height: calc(80vh - 112px);
+    background-color: #83b827;
+}
+#bannerTop .container{
+    display: flex!important;
+}
+.bannerContentText{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    font-size: 3rem;
+}
+.bannerContentText h2{
+    font-size: 4rem;
+    line-height:50px;
+    font-weight: bold;
+    text-align: left;
+    color: #FFF;
+}
+.bannerContentText span{
+    color: #456521;
+}
+.bannerContentImage{
+    flex:1;
+    position: relative;
+}
+.bannerContentImage img{
+    width: 888px;
+    position: absolute;
+    right: -150px;
+    bottom: -50px
+}
+.bannerTopButtonArea{
+    width: 100%;
+}
+.bannerTopButtonArea a{
+    display: inline-block !important;
+}
+.bannerTopButton{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.bannerTopArea .bannerTopButton{
+    display: inline-block;
+    color: #FFF;
+    background-color: #456521 !important;
+    padding: 5px 28px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 1.5rem;
+}
+.bannerTopArea .bannerTopButton:hover{
+    opacity: .8;
+}
+
+/* ---- AREA BANNERTOP ---- */
+
+
+/*---- CSS pointers Slide  Banner----*/
+
+.banner .pointers{
+    width:100vw;
+    height: 15px;
+    position:absolute;
+    margin-top:-50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #E2F460;
+    border-radius:8px;
+    margin: 0 5px;
+    cursor:pointer;
+}
+.banner .pointers .active{
+    background-color: #E2F460;
+}
+
+
+/* DEFAULT COLORS AREA */
+
+.green {
+    background-color: #456521;
+    color: #FFF;
+    width: 100vw;
+}
+.light {
+    background-color: rgb(233, 230, 230);
+    color: #353535;
+    width: 100vw;
+}
+
+/*---- About Us Zone ----*/
+
+.btn img{
+    width:40px;
+    height:40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color:#b98b59;
+    padding:5px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+.default{
+    display:flex;
+    margin: auto;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.default .section-title,
+.default .section-description{
+    text-align: center;
+    font-weight:bold;
+    font-size:20px;
+    text-transform:uppercase;
+}
+.default .section-description{
+    color: #adadad;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+.default .textArea a{
+    display: inline-block;
+    margin-top:40px;
+}
+.default .contentAboutUs{
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    max-width: 1120px;
+}
+.default .textArea{
+    color:#353535;
+    font-size: 14px;
+    line-height:25px;
+    margin-right: 20px;;
+}
+.buttonAboutsUs{
+    background-color: #8AC02B !important;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.default .section-body .imgVideo{
+    width:500px;
+    height:auto;
+    box-shadow: 2px 6px 12px #737272;
+}
+.imgArea a{
+    color: #FFF;
+}
+.default .imgArea{
+    position:relative;
+    cursor:pointer;
+}
+.default .section-body .legendaImage{
+    width:500px;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    color: #fff;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.default .imgArea:hover .legendaImage{
+    display:flex;
+    transition: all 0.5s linear;
+}
+.btnTop img{
+    width:40px;
+    height:40px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color:#8AC02B;
+    padding:5px;
+    border-radius: 50%;
+    cursor:pointer;
+    display: block;
+    z-index: 999;
+}
+
+
+
+/*---- AREA Services ----*/
+
+
+.bg_img{
+    background-image: url(../images/fundo_services.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 50px 0;
+    width: 100vw;
+}
+.default.green .section-services{
+    display: flex;
+    margin: auto;
+    padding:20px;
+    max-width: 1120px;
+    justify-content:space-around;
+    text-align:center;
+    color: #FFF;
+ }
+ .section-services .section-services--service img{
+     width:60px;
+     height:auto;
+ }
+ .section-services .section-services--service h1{
+     text-transform: uppercase;
+     font-size: 18px;
+     font-weight: 400;
+     margin-top:20px ;
+     color: #FFF;
+     line-height:25px;
+ }
+ .section-services .section-services--service p{
+     font-size:13px;
+     color: #ccc;
+     margin-top:10px;
+     font-weight:600;
+ }
+ .default.green .section-services .section-services--service{
+     flex:1;
+     padding: 10px;
+     border-right: 1px solid rgba(255, 255, 255, 0.466);
+ }
+ .default.green .section-services .section-services--service.borderleft{
+     border-left: 1px solid rgba(255, 255, 255, 0.466);;
+ }
+ .services .serviceIcon{
+     width: 50px;
+ }
+
+
+/* ---- ARE SEGMENTS ---- */
+
+
+.sliderArea{
+    width: 100vw;
+}
+.controlsSliders img:first-child{
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 95vw;
+    z-index: 99;
+    cursor:pointer;
+    transition: all .2s ease-in-out;
+}
+.controlsSliders img:last-child{
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    right: 95vw;
+    z-index: 99;
+    cursor:pointer; 
+    transition: all .3s ease-in-out;
+}
+.controlsSliders img:hover{
+    border-radius: 3px;
+    padding:10px;
+    background-color:rgba(187, 187, 187, 0.13);
+}
+
+.sectionSegments--sliders{
+    display: flex;
+    width: 1000vw;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.sectionSegments--slide{
+    width: 100vw;
+    transition: all 0.5s linear;
+}
+
+.sectionSegments--slideContent{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transition: all 0.5s linear;
+}
+.sectionSegments--slideContent img{
+    margin-right: 50px;
+    width:300px;
+}
+/* ---- ARE SEGMENTS ---- */
+
+/* AREA REVENDEDOR */
+
+.section--revendedor{
+    background-image: url(../images/predios.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.section--revendedor--content{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 40px;
+}
+.section--revendedor--content--image{ 
+    width: 500px;
+    position: absolute;
+    bottom:0;
+    left:0;
+}
+.section--revendedor--content--image img{
+    width:100%;
+}
+.section--revendedor--contentInfos{  
+    display: flex;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.432);
+}
+.section--revendedor--contentInfos--area{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form-control{
+    border:none !important;
+    color: #ffffff !important;
+}
+.form-group{
+    border-bottom: 1px solid #ffffff !important;
+}
+input,
+textarea{
+    background-color: transparent !important;
+}
+input::placeholder,
+textarea::placeholder{
+    color: #b8b8b8 !important;
+}
+input:focus,
+textarea:focus{
+    box-shadow: none !important;
+}
+.section--revendedor--form{
+    width: 42%;
+}
+.section--revendedor--form h4{
+    text-transform: uppercase;
+    color: #FFF !important;
+    text-align: center;
+    font-weight: normal !important;
+}
+.button--form{
+    font-weight: bold;
+    display:block;
+    justify-content:center;
+    align-items:center;
+    width: 100px;
+    border:0;
+    color: #FFF;
+    border-radius: 2px;
+    background-color: #8AC02B;
+    padding:10px 30px !important;
+    margin: auto;
+    transition: all 0.5s ease;
+}
+.button--form:hover{
+    background-color: #E2F460 !important;
+    color: #000 !important;
+}
+
+/* AREA REVENDEDOR */
+
+
+/* AREA SCREENS */
+
+.body--section--screens{
+    width:100vw;
+    overflow: hidden;
+}
+.section-screens--sliders{
+    width: 1000vw;
+    display:flex;
+    transition: all 0.5s linear;
+}
+.section-screens--sliders .section-screens--slide{
+    width:100vw;
+    display:inline-block;
+    position: relative;
+    transition: all 0.5s linear;
+}
+.body--section--screens .section-slide--content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: all 0.5s linear;
+}
+.section-slide--content img{
+    width: 500px;
+    border-radius:5px;
+    box-shadow: 15px 3px 20px rgb(136, 136, 136);
+    margin-right: 70px;
+    cursor: pointer;
+}
+.section-slide--contentArea h4{
+    text-transform: uppercase;
+}
+
+/* AREA SCREENS */
+
+
+/*---- Area slide Happy Clients ----*/
+
+.white{
+    background-color:#FFF;
+}
+.clientIllustration img{
+    width: 100%;
+}
+.section-body{
+    width:100vw;
+    overflow: hidden;
+}
+.section-client--sliders{
+    width: 1000vw;
+    display:flex;
+    position: relative;
+}
+.section-client--sliders .section-client--slide{
+    width:100vw;
+    display:inline-block;
+}
+.section-body .section-slide--contentCliente{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    padding: 20px;
+}
+.section-body .section-slide--content--avatar{
+    width:120px;
+    margin-bottom:20px;
+}
+.section-body .section-slide--content--name{
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.section-body .section-slide--content--description{
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom:20px;
+}
+.section-body .section-slide--content--quoteImg{
+    margin-bottom: 15px;
+}
+.section-body .section-slide--content--quote{
+    color:rgb(117, 117, 117);
+    line-height:20px;
+    max-width: 600px;
+}
+
+
+
+/* AREA CONTATO */
+
+.section--contato--description{
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+
+/* AREA CONTATO */
+
+
+
+/*---- AREA MAP/LOCATION ----*/
+
+.location-area{
+    background-image:url(../images/mapa.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.location-body{
+    width: 100vw;
+    max-width: 1120px;
+    margin: auto;
+    display:flex;
+    padding:40px 10px;
+    color:#aeaeae;
+    font-weight: 600;
+}
+.location-body--infos{
+    width: 50%;
+    padding:40px 35px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 7px #555;
+}
+.location-body--infos--area{
+    display:flex;
+    align-items:center;
+    margin-bottom: 14px;
+}
+.location-body--infos--image{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8AC02B;
+    width: 35px;
+    height:35px;
+    border-radius: 50%;
+    margin-right: 18px;
+}
+
+
+
+/*---- AREA FOOTER ----*/
+
+footer{
+    background-color: #456521;
+    padding: 30px 0;
+    height:auto;
+}
+.footer-area{
+    width: 100vw;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content:center;
+    align-items:center;
+}
+.footer-area--infos{
+    flex:1;
+    height:200px;
+    color:#FFF;
+    padding: 5px;
+    font-weight: normal;
+}
+.footer--socials{
+    display:flex;
+    align-items:center;
+}
+.footer-area--infos:first-child{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-area--infos:nth-child(2){
+    line-height:20px;
+    margin-right: 20px;
+}
+.footer--socials a{
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    width:20px;
+    height:20px;
+    background-color: #373737;
+    padding: 15px;
+    margin-right: 5px;
+    border-radius: 20px;
+    cursor:pointer;
+    transition: all 0.3s linear;
+}
+.footer--socials a:hover{
+    background-color:#8AC02B;
+}
+.footer-copyright{
+    color:#fff;
+    font-weight:bold;
+    font-size: 13px;
+}
+.footer-area--form{
+    background-color: #373737;
+    padding: 40px 10px;
+    border-radius: 4px;
+}
+.footer-area--form form{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.footer--email::placeholder{
+    text-align: center;
+    font-size: 12px;
+}
+
+
+/*---- AREA MENU MOBILE ----*/
+.header .menu-mobile{
+    display: none;
+}
+
+
+
+
+
+
+/* --------RESPONSIVIDADE------- */
+
+@media (max-width: 1199px){
+.header .overlay {
+        height: auto; 
+    }
+.navbar-right{
+    display: none !important;
+    }
+    .menuMobile--area{
+        display: block;
+    }
+    .menuMobile--area img{
+        position: absolute;
+        right: 10px;
+        top: 30px;
+    }
+    .loginButton{
+        font-weight: bold;
+        display:block;
+        justify-content:center;
+        align-items:center;
+        width: 100px;
+        border:0;
+        color: #FFF;
+        border-radius: 2px;
+        background-color: #8AC02B;
+        padding:10px 30px !important;
+    }
+    aside .loginButton{
+        font-weight: bold;
+        display:block;
+        width: 100%;
+        margin-right:50px;
+        border:0;
+        color: #FFF;
+        border-radius: 2px;
+        background-color: #6d9922;
+        padding:10px 21px !important;
+    }
+    .positionButton:hover{
+        background-color: transparent !important;
+        color: #000; 
+    }
+    aside ul li{
+        margin-bottom:30px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    aside ul li a{
+        display: block;
+        color: #FFF;
+        text-transform: uppercase;
+        font-weight:bold;
+        font-size: 2rem;
+        padding:5px 0;
+    }
+    aside ul li a:hover{
+        background-color: rgba(255, 255, 255, 0.432);
+        color: #E2F460;
+        padding: 15px 0;
+    }
+    .bannerContentImage img {
+        width: 745px;
+        position: absolute;
+        right: -166px;
+        bottom: -41px;
+    }
+    #bannerTop {
+        height: calc(66vh - 112px);
+    }
+    .section--revendedor--content--image img {
+        display:none;
+    }
+
+}
+
+@media (max-width: 992px){
+    .bannerContentImage img {
+        width: 690px;
+        position: absolute;
+        right: -168px;
+        bottom: -37px;
+    }
+    .bannerContentText h2 {
+        line-height: 40px;
+    }
+    .menuMobile--area img {
+        position: absolute;
+        right: -59px;
+        top: 30px;
+        margin-right: 60px;
+    }
+    .logoArea img {
+        width: 113px;
+        margin-left: -38px;
+    }
+    .menuArea {
+        padding: 0 20px;
+    }
+}
+@media(max-width:768px){
+    .phoneFrom{
+        font-size: 14px;
+    }
+    .bannerContentImage img {
+        width: 557px;
+        position: absolute;
+        right: -51px;
+        bottom: -34px;
+    }
+    .default .contentAboutUs {
+        flex-direction: column;
+    }
+    .imgArea{
+        display:flex;
+        justify-content:center;
+    }
+    .textArea{
+        margin: 0;
+    }
+    .section-services{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section-services--service{
+        min-width: 50%;
+        border-right: 0 !important;
+    }
+    .borderleft{
+        border-left: 0 !important;
+    }
+    .section--revendedor--contentInfos{
+        padding: 0 10px ;
+    }
+}
+
+@media (max-width: 768px){
+    .bannerContentImage img {
+        width: 328px;
+        position: absolute;
+        right: -37px;
+        bottom: -18px;
+    }
+    .bannerContentText h2 {
+        font-size: 3rem;
+    }
+    .contentAboutUs .textArea{
+        margin: 0 !important;
+    }
+    .default .section-body .imgVideo {
+        width: 390px;
+    }
+    .default .textArea a {
+        display: inline-block;
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
+    .default .section-description {
+        margin-bottom: -5px;
+    }
+    .section-services--service {
+        min-width: 100%;
+        border-right: 0 !important;
+    }
+    .sectionSegments--slideContent img{
+        width: 50%;
+        margin: 0 0 15px 0 !important;
+    }
+    .sectionSegments--slideContent{
+        flex-direction: column;
+        text-align: center;
+    }
+    .controlsSliders img:first-child {
+        width: 40px;
+        position: absolute;
+        top: 50%;
+        left: 90vw;
+        z-index: 99;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+    }
+    .controlsSliders img:last-child {
+        width: 40px;
+        position: absolute;
+        top: 50%;
+        right: 89vw;
+        z-index: 99;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+    .section--revendedor--contentInfos{
+        flex-direction: column !important;
+    }
+    .section--revendedor--form{
+        width: 90% !important;
+    }
+    .section-slide--content{
+        flex-direction: column !important;
+    }
+    .section-slide--content img{
+        width: 380px;
+        text-align: center;
+        margin: 0 0 30px 0 !important;
+    }
+    .section-slide--contentArea{
+        font-size: 1.3rem;
+    }
+    .body--section--screens .controlsSliders img{
+        top: 55% !important;
+    }
+    .section--contato--description {
+        margin-bottom: 26px;
+        text-align: center;
+        margin-top: 25px;
+        text-transform: none;
+    }
+    .location-body--infos {
+        width: 100% !important;
+    }
+    .logoArea img {
+        width: 113px !important;
+        margin-left: -27px !important;
+        margin-top: -20px !important;
+    }
+    .default .section-description {
+        margin-bottom: 25px !important;
+    }
+    .footer-area--infos{
+        font-size: 1.1rem !important;
+    }
+
+}
+
+@media(max-width:498px){
+    .emailFrom,
+    .phoneFrom{
+        font-size: 10px;
+    }
+}
+@media(max-width:386px){
+    .emailFrom,
+    .phoneFrom{
+        font-size: 8px;
+    }
+}
+
+@media(max-width:320px){
+    .bannerTopArea{
+        flex-direction: column !important;
+    }
+    .bannerContentText h2 {
+        font-size: 2.2rem;
+    }
+    .bannerContentImage img {
+        width: 340px !important;
+        position: absolute;
+        right: -37px;
+        bottom: -18px;
+    }
+    .bannerContentText h2 {
+        font-size: 2.5rem !important;
+    }
+    .default .section-body .imgVideo {
+        width: 300px;
+    }
+    .section-description{
+        font-size: 1rem !important;
+    }
+    .sectionSegments--slide{
+        font-size: 1.2rem;
+    }
+    .sectionSegments--slide h4{
+        font-size: 1.6rem !important;
+        margin: 0 !important;
+    }
+    .section-slide--content img{
+        width: 290px;
+        text-align: center;
+        margin: 0 0 30px 0 !important;
+    }
+    .section-slide--contentArea{
+        font-size: 1.2rem !important;
+    }
+    .section-slide--contentArea h4{
+        font-size: 1.6rem !important;
+        margin: 0 !important;
+        text-align: center;
+        text-transform: none;
+    }
+    .location-body--infos--image{
+        display: none !important;
+    }
+    .location-body--infos--area img{
+        display: none !important;
+    }
+    .footer-area--infos{
+        font-size: 1.1rem !important;
+    }
+    aside ul li {
+        margin-left: 72px;
+    }
+    
+}

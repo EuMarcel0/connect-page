@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- TITLE OF SITE -->
+    <title>Connect Software</title>
+
+    <meta name="description"
+        content="O sistema ideal para controlar estoque, realizar vendas, fazer a gestão financeira e emitir NFCe e NFe" />
+    <meta name="keywords"
+        content="Sistema para Automação Comercial, NFE, NFCE, Automação, Fiscal, 
+    Estoque, Financeiro, Connect Software, Connect, Software, PDV, Frente de Caixa, Caixa, Loja, Mercado, Restaurante, Delivery, FastFood, Food" />
+    <meta name="author" content="ConnectSoftware">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- FAVICON  -->
+    <link rel="icon" href="assets/images/favicon/icon.png">
+
+    <!-- =========================
+       STYLESHEETS 
+    ============================== -->
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="assets/css/icons/icons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+
+    <!-- GOOGLE FONTS -->
+    <link href="http://fonts.googleapis.com/css?family=Raleway:300,400,600,700%7COpen+Sans:300,400,600,700%7CHandlee"
+        rel="stylesheet">
+
+    <!-- PLUGINS STYLESHEET -->
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+
+    <!-- CUSTOM STYLESHEET -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- RESPONSIVE FIXES -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- COLORE STYLESHEET -->
+    <!-- Change here the Main Color of the Site: Choose your favorite predefined color from assets/css/colors.css -->
+    <link rel="stylesheet" href="assets/css/colors/orange.css" title="red">
+
+
+    <!--[if lt IE 9]>
+            <script src="assets/js/plugins/html5shiv.min.js"></script>
+            <script src="assets/js/plugins/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <!-- =========================
+             PRELOADER
+        ============================== -->
+        <div class="preloader">
+            <div class="loader-container">
+                <div class="text-logo text-center">Connect Software</div>
+                <div class="signal"></div>
+            </div>
+        </div>
+
+
+        <!-- =========================
+             HEADER
+        ============================== -->
+        <header class="header dashboard solid-bg" id="top">
+            <!-- Background Overlay -->
+            <div class="overlay">
+
+                <!-- =========================================
+                     Navigation
+                ========================================== -->
+                <nav class="navbar navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <!-- Navbar-Header -->
+                                <div class="navbar-header">
+
+                                    <!-- Mobile Menu -->
+                                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle"
+                                        type="button">
+                                        <i class="icon icon_menu"></i>
+                                    </button>
+
+                                    <!-- Text-Logo -->
+                                    <a href="#top" class="navbar-brand scrollto" title="SmartMvp">
+                                        <span class="text-logo">Connect Software</span>
+                                    </a>
+
+                                    <!-- Image-Logo: Remove this comments and the section above Text-Logo if you want to add an Image-Logo (recommended sizes -> max-height:50, max-width:200) 
+
+                                    <a href="#top" class="navbar-brand img-logo scrollto" title="SmartMvp">
+                                        <img src="assets/images/logo.png" alt="Logo">
+                                    </a> 
+                                    -->
+
+                                </div><!-- /End Navbar-Header -->
+
+                                <!-- Navbar-Collapse -->
+                                <div class="navbar-collapse collapse">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <!-- Menu Items -->
+                                        <!--<li><a href="#about" title="" class="scrollto">Home</a></li>-->
+                                        <li><a href="#segmentos" title="" class="scrollto">Segmentos</a></li>
+                                        <li><a href="index.html" title="" class="scrollto">Connect Pdv</a></li>
+                                        <li><a href="#revendedor" title="" class="scrollto">Seja um Revendedor</a></li>
+                                        <li><a href="https://www.youtube.com/channel/UCMnWSeXEVqZkSd2Syb4oxXA/featured" title="" class="scrollto">YouTube</a></li>
+                                        <li><a data-toggle="modal" class="scrollto" href="#"
+                                                onclick="openLoginModal();">Download</a></li>
+                                        <li><a href="#contato" title="" class="scrollto">Contato</a></li>
+                                        <!-- Login and Signup Modal on click -->
+                                        <li><a class="btn btn-nav" href="http://93.188.166.54:8080/">Login</a></li>
+                                    </ul>
+                                </div><!-- /End Navbar-Collapse -->
+                            </div><!-- /End Col -->
+                        </div><!-- /End Row -->
+                    </div><!-- /End Container -->
+                </nav><!-- /End Sticky Navigation -->
+                <!-- =========================================
+                     Login/Signup Bootstrap Modal
+                ==========================================  -->
+                <div class="modal fade login" id="loginModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal-Header -->
+                            <div class="modal-header">
+                                <!-- Close Button -->
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    <i class="far fa-times-circle"></i>
+                                </button>
+                                <!-- Modal-Header Title-->
+                                <h4 class="modal-title">Downloads<span> Connect</span></h4>
+                                <p class="modal-subtitle"></p>
+                            </div><!-- /End Modal-Header -->
+
+                            <!-- Modal-Body Content -->
+                            <div class="modal-body">
+                                <div class="box">
+                                    <div class="content">
+                                        <!-- Login Form -->
+                                        <div class="loginBox">
+                                            <ul class="list-group">
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    ConnectPdv
+                                                    <a href="http://connectsoftware.com.br/Download/ConnectPdv.exe"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    ConnectFood
+                                                    <a href="http://connectsoftware.com.br/Download/ConnectFood.exe"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    Java 64bits
+                                                    <a href="http://connectsoftware.com.br/Download/jre-8u311-windows-x64.exe"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    Java 32bits
+                                                    <a href="http://connectsoftware.com.br/Download/jre-8u311-windows-i586.exe"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    MariaDB 64bits
+                                                    <a href="http://connectsoftware.com.br/Download/mariadb-10.3.22-winx64.msi"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    MariaDB 32bits
+                                                    <a href="http://connectsoftware.com.br/Download/mariadb-10.3.22-win32.msi"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- /End Login Form -->
+                                    </div>
+                                </div><!-- /End Login Form Box -->
+
+                            </div><!-- /End Modal-Body -->
+
+                            <!-- Modal-Footer -->
+                            <div class="modal-footer">
+
+                            </div><!-- /End Modal-Footer -->
+
+                        </div><!-- /End Modal Content -->
+                    </div><!-- /End Modal Dialog -->
+                </div><!-- /End Modal -->
+
+
+
+
+
+                <!-- =========================================
+                     Hero-Section
+                ========================================== -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="hero-section text-center">
+
+                                <!-- Welcome - Hero Message -->
+                                <h1 class="text-white">Moderno, elegante e versátil.</h1>
+
+
+                                <!-- Learn More & Video Buttons -->
+                                <div class="btn-box">
+                                    <a href="#segmentos" class="btn btn-ghost scrollto hidden-xs">Saiba Mais</a>
+                                    <!-- Video Lightbox on Click -->
+                                    <!--<a href="https://youtu.be/aCGzYH9bk2Y" data-type="youtube"
+                                        class="btn btn-white venobox"><i class="icon arrow_triangle-right_alt"></i>Play
+                                        video</a>-->
+                                </div>
+
+                            </div><!-- /End Intro-Section -->
+
+                        </div><!-- /End Col -->
+                    </div><!-- /End Row -->
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!-- Dashboard Image -->
+                            <div class="image-dashboard text-center">
+                                <img src="assets/images/dashboard - food.png" class="wow fadeInUp" data-wow-duration="2s"
+                                    alt="SmartMvp-Dashboard">
+                            </div>
+                        </div><!-- /End Col -->
+                    </div><!-- /End Row -->
+                </div><!-- /End Container Hero-Section -->
+
+
+            </div><!-- /End Background Overlay -->
+        </header>
+        <!-- =========================
+             /END HEADER
+        ============================== -->
+
+
+        <!-- =================================
+             SECTION ABOUT - INTRO FEATURES
+        ====================================== -->
+        <section class="intro-features" id="segmentos">
+            <div class="container">
+                <!-- Padding -->
+                <div class="wrapper-lg">
+                    <div class="row">
+                        <!-- Section Header Title -->
+                        <div class="col-xs-12">
+                            <h2>Explore os Segmentos</h2>
+                            <p class="large">A Connect Software é mais do que apenas um produto, é uma maneira de
+                                pensar.</p>
+                        </div>
+                    </div>
+                    <!-- Three Main Features with Icons -->
+                    <div class="row">
+                        <div class="col-sm-3 intro-content">
+                            <div class="icon-lg">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h4>Restaurantes</h4>
+                            <li>Controle por Mesa</li>
+                            <li>Pré Conta</li>
+                            <li>Pagamento Parcial</li>
+                            <li>Emissão de NFC-e</li>
+                            <li>Controle Financeiro</li>
+                            <li>Relátorio Gerenciais</li>
+                        </div>
+                        <div class="col-sm-3 intro-content">
+                            <div class="icon-lg">
+                                <i class="fas fa-pizza-slice"></i>
+                            </div>
+                            <h4>Pizzaria</h4>
+                            <li>Controle da Materia Prima</li>
+                            <li>Tamanho e Sabores</li>
+                            <li>Controle de Estoque</li>
+                            <li>Emissão de NFCe</li>
+                            <li>Controle Financeiro</li>
+                            <li>Relátorio Gerenciais</li>
+                        </div>
+                        <div class="col-sm-3 intro-content">
+                            <div class="icon-lg">
+                                <i class="fas fa-hamburger"></i>
+                            </div>
+                            <h4>Fast Food</h4>
+                            <li>Venda por Categoria</li>
+                            <li>Observação dos Produtos</li>
+                            <li>Impressão na Cozinha</li>
+                            <li>Emissão de NFCe</li>
+                            <li>Controle Financeiro</li>
+                            <li>Relátorio Gerenciais</li>
+                        </div>
+
+                        <div class="col-sm-3 intro-content">
+                            <div class="icon-lg">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h4>Delivery</h4>
+                            <li>Controle por Status</li>
+                            <li>Via Motoboy</li>
+                            <li>Emissão de NFCe</li>
+                            <li>Controle Financeiro</li>
+                            <li>Relátorio Gerenciais</li>
+                        </div>
+
+                        
+                    </div><!-- /End Row -->
+                </div><!-- /End Wrapper -->
+            </div><!-- /End Container -->
+        </section>
+        <!-- =============================
+             /END INTRO FEATURES
+        ============================== -->
+
+
+        <!-- ==================================================
+             SECTION 2 COLS - IMAGE RIGHT AND TEXT WITH CALL TO ACTION
+        ======================================================= -->
+
+        <!-- =============================
+             /END SECTION 
+        ============================== -->
+
+
+        <!-- ==================================================
+            CHARTS & SHOWCASE SECTION
+        ======================================================= -->
+
+        <!-- =============================
+             /END CHARTS SECTION 
+        ============================== -->
+
+
+        <!-- ==================================================
+            FEATURES SECTION
+        ======================================================= -->
+        <section class="tab-features color-bg" id="revendedor">
+            <div class="container">
+                <div class="features-title">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-white">Seja um Revendedor</h2>
+                            <p class="large text-white">Uma parceria que gera resultados!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <!-- Features Tab -->
+                    <div class="tabs features tab-container">
+                        <ul class="etabs">
+                            <!-- Feature Icon -->
+                            <li class="tab">
+                                <a>
+                                    <div class="icon-sm">
+                                        <i class="far fa-handshake"></i>
+                                    </div>
+                                    <h5 class="text-white">Modelo Flexível</h5>
+                                </a>
+                            </li>
+                            <!-- Feature Icon -->
+                            <li class="tab">
+                                <a>
+                                    <div class="icon-sm">
+                                        <i class="fas fa-dollar-sign"></i>
+                                    </div>
+                                    <h5 class="text-white">Sem Custo para<br> a sua empresa!</h5>
+                                </a>
+                            </li>
+                            <!-- Feature Icon -->
+                            <li class="tab">
+                                <a>
+                                    <div class="icon-sm">
+                                        <i class="fas fa-headset"></i>
+                                    </div>
+                                    <h5 class="text-white">Suporte<br></h5>
+                                </a>
+                            </li>
+                            <!-- Feature Icon -->
+                            <li class="tab">
+                                <a>
+                                    <div class="icon-sm">
+                                        <i class="fas fa-user-shield"></i>
+                                    </div>
+                                    <h5 class="text-white">Portal da Revenda<br></h5>
+                                </a>
+                            </li>
+                            <!-- Feature Icon -->
+
+                        </ul><!-- /End Etabs -->
+
+                        <div class="panel-container">
+                            <div class="tab-content" id="tab-feature-1">
+                                <div class="container">
+                                    <div class="row">
+                                        <!-- Feature Description 2cols Text-Left with Buttons -->
+                                        <div class="col-md-5 col-sm-6">
+                                            <h4>Preencha o formulário abaixo que entraremos em contato.</h4>
+
+                                            <form class="mailchimp-subscribe" role="form">
+                                                <div class="table">
+                                                    <div class="table-row">
+                                                        <div class="table-cell">
+                                                            <div class="form-group">
+                                                                <input type="text" id="nome-revenda" name="email"
+                                                                    placeholder="Qual o seu Nome?" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" id="cnpj-revenda" name="email"
+                                                                    placeholder="Seu CNPJ" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="text" id="contato-revenda" name="email"
+                                                                    placeholder="Seu Celular/WhatsApp"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <input type="email" id="email-revenda" name="email"
+                                                                    placeholder="Seu endereço de E-mail"
+                                                                    class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <textarea type="text" id="mensagem-revenda" name="email"
+                                                                    placeholder="Sua Mensagem"
+                                                                    class="form-control"></textarea>
+                                                            </div>
+                                                            <!-- /End Input Group -->
+                                                        </div><!-- /End Table-Cell -->
+                                                    </div><!-- /End Table-Row -->
+                                                </div><!-- /End Table -->
+                                                <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                                                    <!-- Notifications -->
+                                                    <p class="mc-success"></p>
+                                                    <p class="mc-failed"></p>
+                                                </div>
+                                                <div class="btn-box">
+                                                    <button type="button" onclick="enviarEmailRevenda()"
+                                                        class="btn btn-grey scrollto">Enviar</button>
+                                                </div>
+                                            </form><!-- /End Mailchimp Subscribe Form -->
+
+
+
+
+                                        </div>
+                                        <!-- Image-right -->
+                                        <div class="col-md-7 col-sm-6 hidden-xs wow fadeInRight" data-wow-duration="2s">
+                                            <img src="assets/images/features/feature7.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- /End Tab-content -->
+
+
+
+                        </div><!-- / End Panel-Container -->
+                    </div><!-- / End Tabs -->
+                </div><!-- /End Col -->
+
+            </div><!-- /End Row -->
+        </section>
+        <!-- =============================
+             /END FEATURES TAB
+        ============================== -->
+
+
+        <!-- ==================================================
+            SIGNUP DIVIDER
+        ======================================================= -->
+        <section id="canvas-bg" class="dark-bg signup-divider">
+            <div class="container">
+                <div class="wrapper-lg">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 class="text-white">Comece seu teste gratuito de 30 dias!</h2>
+                            <p class="large text-white">Faça o Download e comece a Utilizar.</p>
+                            <!-- Handwritten text with arrow -->
+                            <p class="signup-handwritten text-white">Porque esperar? Comece agora!<br></p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Signup Form -->
+                        <form id="signup-divider" role="form">
+                            <!-- Notification -->
+                            <p class="signup-success"><i class="icon icon_check_alt2"></i> <strong>Congratulation!
+                                    Welcome to 30 day Free Trial. Check your email address.</strong></p>
+                            <p class="signup-failed"><i class="icon icon_close_alt2"></i><strong> Something went wrong!
+                                    Insert correct value.</strong></p>
+
+                            <!-- Input fields -->
+                            <div class="form-group">
+                                <input type="email" name="signup-email" id="signup-email" class="form-control input-lg"
+                                    placeholder="Insira o seu endereço de E-mail" required>
+                            </div>
+                            <!-- Signup Button -->
+                            <button class="btn btn-color">Comece Agora</button>
+                        </form>
+                    </div><!-- /End Row -->
+                </div><!-- /End Wrapper -->
+            </div><!-- /End Container -->
+        </section>
+        <!-- =============================
+             /END SIGNUP SECTION 
+        ============================== -->
+
+
+        <!-- =============================
+             PRICING SECTION
+        ============================== -->
+
+        <!-- =============================
+             /END PRICING SECTION 
+        ============================== -->
+
+
+        <!-- =======================================================
+             TESTIMONIALS WITH PRESS/CLIENTS LOGOS
+        ============================================================ -->
+
+        <!-- =============================
+             /END TESTIMONIALS
+        ============================== -->
+
+
+        <!-- ==================================================
+            TEAM
+        ======================================================= -->
+        <section class="team" id="team">
+            <div class="container">
+                <div class="wrapper-lg">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Connect FOOD</h2>
+                            <p class="large">Com o Connect FOOD, você emite NFC-e e fecha a venda em poucos cliques.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Team Box -->
+                        <div class="col-sm-4 team-box">
+                            <div class="team-img">
+                                <img src="assets/images/tela-inicial-food.jpg" class="img-responsive" alt="">
+
+                            </div>
+                            <h4>Tela Inicial</h4>
+                            <li class="team-bio">Cadastro de Cliente</li>
+                            <li class="team-bio">Cadastro de Fornecedor</li>
+                            <li class="team-bio">Importação de NF-e, com Certificado Digital</li>
+                            <li class="team-bio">Controle das Movimentações Realizadas</li>
+                        </div>
+                        <!-- Team Box -->
+                        <div class="col-sm-4 team-box">
+                            <div class="team-img">
+                                <img src="assets/images/tela-fast-food.jpg" class="img-responsive" alt="">
+
+                            </div>
+                            <h4>Tela FastFood</h4>
+                            <li class="team-bio">Fechamento de Caixa</li>
+                            <li class="team-bio">Controle de Estoque</li>
+                            <li class="team-bio">Emissão de NFC-e</li>
+                            <li class="team-bio">Contigencia Automática</li>
+                        </div>
+                        <!-- Team Box -->
+                        <div class="col-sm-4 team-box">
+                            <div class="team-img">
+                                <img src="assets/images/tela-estoque-food.jpg" class="img-responsive" alt="">
+
+                            </div>
+                            <h4>Tela Cadastro Estoque</h4>
+                            <li class="team-bio">Cadastro do Produto pelo Codigo de Barras</li>
+                            <li class="team-bio">Fator de Conversão</li>
+                            <li class="team-bio">Cadastro Automático dos Dados Fiscais</li>
+                            <li class="team-bio">Cadastro de Receita</li>
+                        </div>
+                    </div><!-- /End Row -->
+                </div><!-- End Wrapper -->
+            </div>
+            <!--/End Container -->
+        </section>
+        <!-- =============================
+             /END TEAM SECTION 
+        ============================== -->
+
+
+        <!-- ==================================================
+            MOBILE DOWNLOAD SECTION
+        ======================================================= -->
+        <section class="mobile-download light-bg" id="contato">
+            <div class="container">
+                <div class="wrapper-lg">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Contato</h2>
+                            <p class="large">Precisa falar conosco?</p>
+                            <p class="large">Envie uma mensagem através do formulário abaixo e vamos lhe retornar o mais
+                                rapidamente possível.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Text and Mobile Download Buttons -->
+                        <form class="mailchimp-subscribe" role="form">
+                            <div class="table">
+                                <div class="table-row">
+                                    <div class="table-cell">
+                                        <div class="form-group">
+                                            <input type="text" id="nome" name="email" placeholder="Qual o seu Nome?"
+                                                class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" id="contatoTelefone" name="email"
+                                                placeholder="Seu Celular/WhatsApp" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="email" id="email" name="email"
+                                                placeholder="Seu endereço de E-mail" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea type="text" id="mensagem" name="email" placeholder="Sua Mensagem"
+                                                class="form-control"></textarea>
+                                        </div>
+                                        <!-- /End Input Group -->
+                                    </div><!-- /End Table-Cell -->
+                                </div><!-- /End Table-Row -->
+                            </div><!-- /End Table -->
+                            <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                                <!-- Notifications -->
+                                <p class="mc-success"></p>
+                                <p class="mc-failed"></p>
+                            </div>
+                            <div class="btn-box">
+                                <button class="btn btn-grey scrollto" type="button"
+                                    onclick="enviarEmail()">Enviar</button>
+                            </div>
+                        </form><!-- /End Mailchimp Subscribe Form -->
+
+
+
+
+                    </div><!-- /End Row -->
+                </div><!-- /End Wrapper -->
+            </div><!-- /End Container -->
+        </section>
+        <!-- =============================
+             /END MOBILE DOWNLOAD SECTION 
+        ============================== -->
+
+
+        <!-- ==================================================
+            NEWSLETTER AND SOCIAL DIVIDER
+        ======================================================= -->
+        <section class="newsletter color-bg" id="newsletter">
+            <div class="container">
+                <div class="wrapper-sm">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <!-- =========================
+                                Social Icons
+                            ============================== -->
+                            <div class="table">
+                                <div class="table-row">
+                                    <div class="table-cell follow">
+                                        <h5 class="table-title">Siga-nos</h5>
+                                    </div>
+                                    <div class="table-cell">
+                                        <ul class="social-list">
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-instagram"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-youtube"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="fab fa-linkedin"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div><!-- /End Table-Cell -->
+                                </div><!-- /End Table-Row -->
+                            </div><!-- /End Table -->
+                        </div><!-- /End Col -->
+
+                        <div class="col-md-6">
+                            <!-- =========================
+                                MAILCHIMP SUBSCRIPTION FORM 
+                            ============================== -->
+                            <form class="mailchimp-subscribe" role="form">
+                                <div class="table">
+                                    <div class="table-row">
+                                        <div class="table-cell getnewsletter">
+                                            <h5 class="table-title">Receba a Newsletter</h5>
+                                        </div>
+                                        <div class="table-cell">
+                                            <div class="input-group text-white">
+                                                <!-- Input Form -->
+                                                <input type="email" id="subscriber-email" name="email"
+                                                    placeholder="Seu endereço de email" class="form-control">
+                                                <!-- Submit Button -->
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-white">Inscreva-se</button>
+                                                </span>
+                                            </div><!-- /End Input Group -->
+                                        </div><!-- /End Table-Cell -->
+                                    </div><!-- /End Table-Row -->
+                                </div><!-- /End Table -->
+                                <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                                    <!-- Notifications -->
+                                    <p class="mc-success"></p>
+                                    <p class="mc-failed"></p>
+                                </div>
+                            </form><!-- /End Mailchimp Subscribe Form -->
+
+                            <!-- =========================
+                                LOCAL SUBSCRIPTION FORM 
+                            ============================== -->
+                            <!-- ALTERNATE USE: SAVE YOUR SUBSCRIBE LIST IN .TXT
+
+                            <form id="subscribe" role="form">
+                                <div class="table">
+                                    <div class="table-row">
+                                        <div class="table-cell getnewsletter">
+                                            <h5 class="table-title">Get the Newsletter</h5>
+                                        </div>
+                                    </div>
+                                    <div class="table-cell">
+                                        <div class="input-group">
+                                            <input type="email" id="s-email" name="email" placeholder="Your email address" class="form-control">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-color">Submit</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                                    <p class="subscription-success"><i class="icon icon_check_alt2"></i> You are successfully subscribed for our newsletter.</p>
+                                    <p class="subscription-failed"><i class="icon icon_close_alt2"></i> Something went wrong!</p>
+                                </div>
+                            </form>
+                            -->
+
+                        </div><!-- /End Col -->
+                    </div><!-- /End Row -->
+                </div><!-- End Wrapper -->
+            </div><!-- /End Container -->
+        </section>
+        <!-- =============================
+             /END NEWSLETTER SECTION 
+        ============================== -->
+
+
+        <!-- ==================================================
+            FOOTER
+        ======================================================= -->
+        <footer class="footer dark-bg" id="footer">
+            <div class="container">
+                <div class="wrapper-lg">
+                    <div class="row">
+                        <!-- Footer Left Col -->
+
+                        <!-- Footer Contact Col -->
+                        <div class="col-md-3">
+                            <h5 class="text-white">Nosso contato</h5>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-content">
+                                    <a href="mailto:hi@themedept.com">sac@connectsoftware.com.br</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-content">
+                                    (71) 9 9408-2651
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Footer Right Col: Twitter Feed -->
+                        <div class="col-md-4">
+
+                        </div>
+
+                        <!-- Footer Menu and Copy -->
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p class="footer-copy">&copy;Copyrights Connect Software. All Rights Reserved </p>
+                            </div>
+                        </div>
+
+                    </div><!-- End Row -->
+                </div><!-- /End Wrapper -->
+            </div><!-- /End Container -->
+        </footer>
+
+    </div><!-- /End Main Wrapper -->
+
+
+    <!-- =========================
+         SCRIPTS 
+    ============================== -->
+    <script src="assets/js/plugins/jquery1.11.0.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/jquery.easing.1.3.min.js"></script>
+    <script src="assets/js/plugins/modernizr.custom.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    <script src="assets/js/plugins/twitter/tweetie.min.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+
+        function enviarEmail() {
+            var nome = document.getElementById("nome");
+            var contato = document.getElementById("contatoTelefone")
+            var email = document.getElementById("email")
+            var msg = document.getElementById("mensagem")
+            var dadosEmail = {
+                nome: nome.value,
+                contato: contato.value,
+                email: email.value,
+                msg: msg.value
+            }
+            axios.post("http://93.188.166.54:8080/email", dadosEmail).then(response => {
+                var nome = document.getElementById("nome").value = "";
+                var contato = document.getElementById("contatoTelefone").value = ""
+                var email = document.getElementById("email").value = ""
+                var msg = document.getElementById("mensagem").value = ""
+            }).catch(err => {
+                console.log(err)
+            })
+        }
+
+
+        function enviarEmailRevenda() {
+            var nome = document.getElementById("nome-revenda");
+            var cnpj = document.getElementById("cnpj-revenda");
+            var contato = document.getElementById("contato-revenda")
+            var email = document.getElementById("email-revenda")
+            var msg = document.getElementById("mensagem-revenda")
+            var dadosEmail = {
+                nome: nome.value,
+                cnpj: cnpj.value,
+                contato: contato.value,
+                email: email.value,
+                msg: msg.value
+            }
+            axios.post("http://93.188.166.54:8080/email-revenda", dadosEmail).then(response => {
+                var nome = document.getElementById("nome-revenda").value = "";
+                var cnpj = document.getElementById("cnpj-revenda").value = "";
+                var contato = document.getElementById("contato-revenda").value = ""
+                var email = document.getElementById("email-revenda").value = ""
+                var msg = document.getElementById("mensagem-revenda").value = ""
+            }).catch(err => {
+                console.log(err)
+            })
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

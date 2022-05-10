@@ -1,0 +1,773 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- TITLE OF SITE -->
+    <title>Connect Software</title>
+
+    <meta name="description"
+        content="O sistema ideal para controlar estoque, realizar vendas, fazer a gestão financeira e emitir NFCe e NFe" />
+    <meta name="keywords"
+        content="Sistema para Automação Comercial, NFE, NFCE, Automação, Fiscal, 
+    Estoque, Financeiro, Connect Software, Connect, Software, PDV, Frente de Caixa, Caixa, Loja, Mercado, Restaurante, Delivery, FastFood, Food" />
+    <meta name="author" content="ConnectSoftware">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- FAVICON  -->
+    <link rel="icon" href="assets/images/favicon/icon.png">
+
+    <!-- =========================
+       STYLESHEETS 
+    ============================== -->
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css">
+    <!-- FONT ICONS -->
+    <link rel="stylesheet" href="assets/css/icons/icons.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/v4-shims.css">
+    <script src="https://kit.fontawesome.com/8d45ecf6f3.js" crossorigin="anonymous"></script>
+    <!-- PLUGINS STYLESHEET -->
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css">
+    <!-- CUSTOM STYLESHEET -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- RESPONSIVE FIXES -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- COLORE STYLESHEET -->
+    <link rel="stylesheet" href="assets/css/colors/green.css" title="red">
+    <link rel="stylesheet" href="assets/css/style_default.css">
+    <link href="assets/css/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main-wrapper">
+
+        <!-- =========================
+             PRELOADER
+        ============================== -->
+        <div class="preloader">
+            <div class="loader-container">
+                <div class="text-logo text-center">Connect Software</div>
+                <div class="signal"></div>
+            </div>
+        </div>
+
+
+        <!-- =========================
+             HEADER
+        ============================== -->
+        <header class="header dashboard solid-bg" id="top">
+            <div class="contactFast">
+                <div class="contactFastArea container">
+                    <a href="https://www.youtube.com/channel/UCMnWSeXEVqZkSd2Syb4oxXA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <i class="mkdf-icon-font-awesome fa fa-envelope"></i>
+                    <div class="emailFrom">sac@connectsoftware.com.br</div>
+                    <i class="fa-solid fa-phone phoneIcon"></i>
+                    <div class="phoneFrom">(71) 9 9242-3103</div>
+                </div>
+            </div>
+            <div class="overlay">
+                <nav class="navbar menuArea">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12 content--menuArea">
+                                <div class="logoArea">
+                                    <a href="#top" class="navbar-brand scrollto" title="SmartMvp">
+                                        <img src="assets/images/logo.png" alt="logo_icon">
+                                    </a>
+                                </div>
+                                <div class="navbar-collapse collapse menuArea--items">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class=" active"><a href="#apresentação" title="" class="menuArea--item scrollto">Apresentação</a></li>
+                                        <li class=" active"><a href="#segmentos" title="" class="scrollto menuArea--item">Segmentos</a></li>
+                                        <li class=" active"><a href="food.html" title="" class="scrollto menuArea--item">Connect Food</a></li>
+                                        <li class=" active"><a href="#revendedor" title="" class="scrollto menuArea--item">Seja um Revendedor</a></li>
+                                        <li class=" active"><a href="https://www.youtube.com/channel/UCMnWSeXEVqZkSd2Syb4oxXA/featured" target="_blank" title="" class="scrollto menuArea--item">YouTube</a></li>
+                                        <li class=" active"><a data-toggle="modal" class="scrollto menuArea--item" href="#"
+                                                onclick="openLoginModal();">Download</a></li>
+                                        <li><a href="#contato" title="" class="scrollto menuArea--item">Contato</a></li>
+                                        <li><a href="http://93.188.166.54:8080/" class="button positionButton">Login</a></li>
+                                        <!-- <li><a class="btn btn-nav button" href="http://93.188.166.54:8080/">Login</a></li> -->
+                                    </ul>
+                                </div><!-- /End Navbar-Collapse -->
+                                <div class="loginButton">
+                                    <ul>
+                                        <li><a href="http://93.188.166.54:8080/" class="button-mobile">Login</a></li>
+                                    </ul>
+                                </div>
+                                <div class="menuMobile--area" onclick="openedMenu()">
+                                    <img src="assets/images/menu_mobile.png" alt="">
+                                </div>
+                            </div><!-- /End Col -->
+                        </div><!-- /End Row -->
+                    </div><!-- /End Container -->
+                </nav><!-- /End Sticky Navigation -->
+
+
+                <aside class="menuMobile--area-right" id="mobileMenu">
+                    <div class="menuMobile--aside">
+                        <ul>
+                            <li><a href="#segmentos" title="" class="menuArea--mobile-item scrollto" onclick="closeMenu()">Segmentos</a></li>
+                            <li><a href="food.html" title="" class="menuArea--mobile-item scrollto" onclick="closeMenu()">Connect Food</a></li>
+                            <li><a href="#revendedor" title="" class="menuArea--mobile-item scrollto" onclick="closeMenu()">Seja um Revendedor</a></li>
+                            <li><a href="https://www.youtube.com/channel/UCMnWSeXEVqZkSd2Syb4oxXA/featured" target="_blank" title="" class="menuArea--mobile-item" onclick="closeMenu()">YouTube</a></li>
+                            <li><a data-toggle="modal" class="menuArea--mobile-item scrollto" href="#"
+                                    onclick="openLoginModal();">Download</a></li>
+                            <li><a href="#contato" title="" class="menuArea--mobile-item scrollto" onclick="closeMenu()">Contato</a></li>
+                            <li><a href="http://93.188.166.54:8080/" class="menuArea--mobile-item loginButton" onclick="closeMenu()">Login</a></li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- =========================================
+                     Login/Signup Bootstrap Modal
+                ==========================================  -->
+                <div class="modal fade login" id="loginModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal-Header -->
+                            <div class="modal-header">
+                                <!-- Close Button -->
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    <i class="far fa-times-circle"></i>
+                                </button>
+                                <!-- Modal-Header Title-->
+                                <h4 class="modal-title">Downloads<span> Connect</span></h4>
+                                <p class="modal-subtitle"></p>
+                            </div><!-- /End Modal-Header -->
+
+                            <!-- Modal-Body Content -->
+                            <div class="modal-body">
+                                <div class="box">
+                                    <div class="content">
+                                        
+                                        <div class="loginBox">
+                                            <ul class="list-group">
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    ConnectPdv
+                                                    <a href="http://connectsoftware.com.br/Download/ConnectPdv.exe"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    ConnectFood
+                                                    <a href="http://connectsoftware.com.br/Download/ConnectFood.exe"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    Java 64bits
+                                                    <a href="http://connectsoftware.com.br/Download/jre-8u311-windows-x64.exe"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    Java 32bits
+                                                    <a href="http://connectsoftware.com.br/Download/jre-8u311-windows-i586.exe"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    MariaDB 64bits
+                                                    <a href="http://connectsoftware.com.br/Download/mariadb-10.3.22-winx64.msi"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                                <li
+                                                    class="list-group-item d-flex justify-content-between align-items-center">
+                                                    MariaDB 32bits
+                                                    <a href="http://connectsoftware.com.br/Download/mariadb-10.3.22-win32.msi"
+                                                        class="badge badge-primary badge-pill"><i
+                                                            class="fas fa-sort-down"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div><!-- /End Login Form -->
+                                    </div>
+                                </div><!-- /End Login Form Box -->
+                            </div><!-- /End Modal-Body -->
+                            <!-- Modal-Footer -->
+                            <div class="modal-footer">
+                            </div><!-- /End Modal-Footer -->
+                        </div><!-- /End Modal Content -->
+                    </div><!-- /End Modal Dialog -->
+                </div><!-- /End Modal -->
+            </div>
+        </header>
+      
+        <!-- SECTION BANNER - TOP -->
+
+       <section id="bannerTop">
+            <div class="bannerTopArea container">
+                <div class="bannerContentText" data-aos="fade-left" data-aos-delay="1100" data-aos-duration="2000">
+                    <h2>Precisa de um sistema para gerenciar sua empresa?<br><span>Então você encontrou</span></h2>
+                    <div class="bannerTopButtonArea">
+                        <a href="#segmentos" class="bannerTopButton scrollto">Saiba mais</a>
+                    </div>
+                </div>
+                <div class="bannerContentImage" data-aos="fade-right" data-aos-delay="1100" data-aos-duration="2000">
+                    <img src="assets/images/illustrationBanner2.png" alt="illustration_illustration">
+                </div>
+            </div>
+       </section>
+
+        <!-- SECTION BANNER - TOP / -->
+
+        <!-- AREA ABOUT US -->
+
+        <section class="default light container" id="apresentação">
+            <div class="section-title">Sobre a Connect Software</div>
+            <div class="section-description">Automação comercial para gerir a sua empresa</div>
+            <div class="section-body">
+                <div class="contentAboutUs">
+                    <div class="textArea" data-aos="fade-left" data-aos-delay="1100" data-aos-duration="2000">
+                        A Connect é referência em venda de sistema e estabilidade. Estamos sempre ouvindo nossos clientes, identificando suas necessidades e expectativas para oferecer a melhor solução em software.
+                        Nós nos preocupamos em criar relações de longo prazo com nossos clientes e colaboradores, não apenas focando nas vendas, oferecendo as melhores soluções, sempre incrementando seu conhecimento.
+                        Estamos sempre inovando para proporcionar a melhor experiência para nossos clientes.
+                        <br/>
+                        <a href="#segmentos" class="button--default buttonAboutsUs scrollto">Saiba mais</a>
+                    </div>
+                    <div class="imgArea" data-aos="fade-right" data-aos-delay="500" data-aos-duration="2000">
+                        <div class="legendaImage">
+                            <a href='https://www.youtube.com/watch?v=aCGzYH9bk2Y&ab_channel=ConnectSoftware' target='_blank'>ASSISTIR <img src="assets/images/play-video.png" alt=""> VÍDEO</a>
+                        </div> 
+                        <img src="assets/images/tela_inicial.jpg" class="imgVideo" alt="video">
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <!-- AREA ABOUT US /-->
+
+
+
+        <!-- AREA SERVICES -->
+
+        <section class="default green container paddingZero bg_img">
+                <div class="section-title">Serviços</div>
+                <div class="section-description">Serviços que fornecemos</div>
+                <div class="section-body">
+                    <div class="section-services" data-aos="fade-up-right" data-aos-delay="1100" data-aos-duration="2000">
+                        <div class="section-services--service borderleft">
+                            <img src="assets/images/relogio_icon.png" class="serviceIcon" alt="medal_icon">
+                            <h1>Sistema de<br/>alta qualidade</h1>
+                            <p>Sistema 100% estável e banco de dados totalmente fluido</p>
+                        </div> 
+                        <div class="section-services--service">
+                            <img src="assets/images/estrela_icon.png" class="serviceIcon" alt="medal_icon">
+                            <h1>Design<br/>moderno</h1>
+                            <p>Design moderno, fácil e bastante intuitivo</p>
+                        </div> 
+                        <div class="section-services--service">
+                            <img src="assets/images/update_icon.png" class="serviceIcon" alt="medal_icon">
+                            <h1>Updates<br/>Regulares</h1>
+                            <p>Updates automatizados e frequentes</p>
+                        </div> 
+                        <div class="section-services--service">
+                            <img src="assets/images/support_icon.png" class="serviceIcon" alt="medal_icon">
+                            <h1>Suporte rápido e<br/>dinâmico</h1>
+                            <p>Suporte rápido e de alta performance para você não ficar na mão</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- AREA SERVICES /-->
+
+
+
+        <!-- AREA SEGMENTS -->
+
+        <section class=" default light sectionSegments" id="segmentos">
+            <div class="section-title">Explore os Segmentos</div>
+            <div class="section-description">A Connect Software não é apenas um produto, é uma maneira de pensar.</div>
+            <div class="sliderArea">
+                <div class="controlsSliders">
+                    <img src="assets/images/next-black.png" onclick="nextSlide()" alt="">
+                    <img src="assets/images/prev-black.png" onclick="backSlide()" alt="">
+                </div>
+                <div class="sectionSegments--sliders" id="areaSliderSegments">
+                    <div class="sectionSegments--slide">
+                        <div class="sectionSegments--slideContent">
+                            <img src="assets/images/market.png" data-aos="fade-down-left" data-aos-delay="1100" data-aos-duration="2000" alt="">
+                            <div class="sectionSegments--slideContent--infos" data-aos="fade-down-right" data-aos-delay="1100" data-aos-duration="2000">
+                                <h4>Mercados e Mini-Mercados</h4>
+                                <li>Integração com Balança</li>
+                                <li>Impressão de Etiquetas</li>
+                                <li>Importação de NFe</li>
+                                <li>Emissão de NFC-e/NF-e</li>
+                                <li>Exportação de SPED/PIS COFINS</li>
+                                <li>Controle Financeiro</li>
+                                <li>Relátorios Gerenciais</li>
+                                <li>Notas de serviços/manutenção</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionSegments--slide">
+                        <div class="sectionSegments--slideContent">
+                            <img src="assets/images/loja.png" data-aos="fade-down-left" data-aos-delay="1100" data-aos-duration="2000" alt="">
+                            <div class="sectionSegments--slideContent--infos" data-aos="fade-down-right" data-aos-delay="1100" data-aos-duration="2000">
+                                <h4>Loja de Variedades</h4>
+                                <li>Comissão de Vendedores</li>
+                                <li>Venda por KIT</li>
+                                <li>Grade para tamanhos e cores</li>
+                                <li>Controle de Estoque</li>
+                                <li>Emissão de NFC-e/NF-e</li>
+                                <li>Controle Financeiro</li>
+                                <li>Relátorio Gerenciais</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionSegments--slide">
+                        <div class="sectionSegments--slideContent">
+                            <img src="assets/images/roupas.png" data-aos="fade-down-left" data-aos-delay="1100" data-aos-duration="2000" alt="">
+                            <div class="sectionSegments--slideContent--infos" data-aos="fade-down-right" data-aos-delay="1100" data-aos-duration="2000">
+                                <h4>Roupas e Vestuários</h4>
+                                <li>Venda por KIT</li>
+                                <li>Grade de Tamanhos e Cores</li>
+                                <li>Sistema de Troca</li>
+                                <li>Emissão de NFC-e/NF-e</li>
+                                <li>Controle Financeiro</li>
+                                <li>Relátorio Gerenciais</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sectionSegments--slide">
+                        <div class="sectionSegments--slideContent">
+                            <img src="assets/images/construcao.png" data-aos="fade-down-left" data-aos-delay="1100" data-aos-duration="2000" alt="">
+                            <div class="sectionSegments--slideContent--infos" data-aos="fade-down-right" data-aos-delay="1100" data-aos-duration="2000">
+                                <h4>Materiais de Construção</h4>
+                                <li>Orçamentos</li>
+                                <li>Comissão de Vendedores</li>
+                                <li>Vendas no Balcão</li>
+                                <li>Emissão de NFC-e/NF-e</li>
+                                <li>Controle Financeiro</li>
+                                <li>Relátorio Gerenciais</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AREA SEGMENTS /-->
+
+     
+        <!-- AREA REVENDEDOR -->
+
+        <section class=" default green section--revendedor container" id="revendedor">
+            <div class="section-title">Seja um Revendedor</div>
+            <div class="section-description">Uma parceria que gera resultados!</div>
+            <div class="body--section--revendedor">
+                <div class="section--revendedor--content">
+                    <div class="section--revendedor--content--image" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" data-aos-duration="2000">
+                        <img src="assets/images/Startup.png" alt="">
+                    </div>
+                    <div class="section--revendedor--contentInfos" data-aos="zoom-out-right" data-aos-delay="1100" data-aos-duration="2000">
+                        <div class="section--revendedor--contentInfos--area">
+                            <img src="assets/images/cumprimento.png" alt="">
+                            <div class="section--revendedor--content--description">
+                                MODELO FLEXÍVEL
+                            </div>
+                        </div>
+                        <div class="section--revendedor--contentInfos--area">
+                            <img src="assets/images/money.png" alt="">
+                            <div class="section--revendedor--content--description">
+                                SEM CUSTOS PARA<br/>SUA EMPRESA!
+                            </div>
+                        </div>
+                        <div class="section--revendedor--contentInfos--area">
+                            <img src="assets/images/support-white.png" alt="">
+                            <div class="section--revendedor--content--description">
+                                SUPORTE
+                            </div>
+                        </div>
+                        <div class="section--revendedor--contentInfos--area">
+                            <img src="assets/images/helpdesk.png" alt="">
+                            <div class="section--revendedor--content--description">
+                                PORTAL DA REVENDA
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section--revendedor--form" data-aos="zoom-out-left" data-aos-delay="1100" data-aos-duration="2000">
+                <h4>Preencha o formulário abaixo</h4>
+                <form class="mailchimp-subscribe" role="form">
+                    <div class="table">
+                        <div class="table-row">
+                            <div class="table-cell">
+                                <div class="form-group">
+                                    <input type="text" id="nome-revenda" name="email"
+                                        placeholder="Qual o seu nome?" autocomplete="none" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="cnpj-revenda" name="email"
+                                        placeholder="Seu CNPJ" autocomplete="none" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="contato-revenda" name="email"
+                                        placeholder="Seu Celular/WhatsApp" autocomplete="none"
+                                        class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email-revenda" name="email"
+                                        placeholder="Seu e-mail" autocomplete="none"
+                                        class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <textarea type="text" id="mensagem-revenda" name="email"
+                                        placeholder="Sua mensagem"
+                                        class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                        <p class="mc-success"></p>
+                        <p class="mc-failed"></p>
+                    </div>
+                    <div class="btn-box">
+                        <button type="button" onclick="enviarEmailRevenda()"
+                            class="button--form">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- AREA REVENDEDOR / -->
+
+        <!-- AREA SCREENS-->
+
+        <section class="default light section--screens container" id="team">
+            <div class="section-title">Galeria de telas</div>
+            <div class="section-description">Com o Connect PDV, você fecha a venda e emite NFC-e em poucos cliques</div>
+            <div class="body--section--screens">
+                <div class="section-screens--sliders" id="sectionSliderScreens">
+                    <div class="controlsSliders">
+                        <img src="assets/images/next-black.png" onclick="nextSlideTelas()" alt="">
+                        <img src="assets/images/prev-black.png" onclick="backSlideTelas()" alt="">
+                    </div>
+                    <div class="section-screens--slide">
+                        <div class="section-slide--content">
+                            <img src="assets/images/img-banner.png" alt="tela_inicial" data-aos="zoom-out-up" data-aos-delay="1400" data-aos-duration="2000">
+                            <div class="section-slide--contentArea" data-aos="zoom-out-down" data-aos-delay="1400" data-aos-duration="2000">
+                                <h4>Tela Inicial</h4>
+                                <li class="team-bio">Cadastro de mercadorias</li>
+                                <li class="team-bio">Entrada de notas</li>
+                                <li class="team-bio">Cadastro de clientes</li>
+                                <li class="team-bio">Cadastro de fornecedor</li>
+                                <li class="team-bio">Importação de NF-e com certificado digital</li>
+                                <li class="team-bio">Relatórios das movimentações: entrada e saída</li>
+                                <li class="team-bio">Controle de financeiro</li>
+                                <li class="team-bio">Imagem de fundo editável</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-screens--slide">
+                        <div class="section-slide--content">
+                            <img src="assets/images/tela-pdv2.png" alt="tela_inicial" data-aos="zoom-out-up" data-aos-delay="1400" data-aos-duration="2000">
+                            <div class="section-slide--contentArea" data-aos="zoom-out-down" data-aos-delay="1400" data-aos-duration="2000">
+                                <h4>Tela PDV</h4>
+                                <li class="team-bio">Fechamento de caixa</li>
+                                <li class="team-bio">Troca de mercadoria</li>
+                                <li class="team-bio">Controle de estoque</li>
+                                <li class="team-bio">Emissão de NFC-e</li>
+                                <li class="team-bio">contingência automática</li>
+                                <li class="team-bio">Troca de turno</li>
+                                <li class="team-bio">Tela de caixa livre</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-screens--slide">
+                        <div class="section-slide--content">
+                            <img src="assets/images/tela-cadastro_estoque.png" alt="tela_inicial" data-aos="zoom-out-up" data-aos-delay="1400" data-aos-duration="2000">
+                            <div class="section-slide--contentArea" data-aos="zoom-out-down" data-aos-delay="1400" data-aos-duration="2000">
+                                <h4>Tela Cadastro Estoque</h4>
+                                <li class="team-bio">Cadastro do produto pelo codigo de barras</li>
+                                <li class="team-bio">Fator de conversão</li>
+                                <li class="team-bio">Cadastro automático dos dados fiscais</li>
+                                <li class="team-bio">Preço de atacado e varejo</li>
+                                <li class="team-bio">Grade para trabalhar com tamanhos e cores</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+     
+        <!-- AREA SCREENS /-->
+
+        <!-- AREA CONTATO-->
+
+        <section class="default green section--contato container" id="contato">
+            <div class="section-title">Contato</div>
+            <div class="section-description">Precisa falar conosco?</div>
+            <div class="body--section--contato" data-aos="fade-up"
+            data-aos-duration="3000">
+                <div class="section--contato--description">
+                    Envie uma mensagem através do formulário abaixo que iremos retornar o mais rápido possível
+                </div>
+                <form class="mailchimp-subscribe" role="form">
+                    <div class="table">
+                        <div class="table-row">
+                            <div class="table-cell">
+                                <div class="form-group">
+                                    <input type="text" id="nome" name="email" autocomplete="none" placeholder="Qual o seu nome?"
+                                        class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="contatoTelefone" name="email"
+                                        placeholder="Seu Celular/WhatsApp" required autocomplete="none" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="email" name="email"
+                                        placeholder="Seu e-mail" autocomplete="none" required class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <textarea type="text" id="mensagem" name="email" required placeholder="Sua Mensagem"
+                                        class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                        <p class="mc-success"></p>
+                        <p class="mc-failed"></p>
+                    </div>
+                    <div class="btn-box">
+                        <button class="button--form" type="button"
+                            onclick="enviarEmail()">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- AREA CONTATO / -->
+
+
+        <!-- AREA DE HAPPY CLIENTS -->
+
+        <!-- <section class="default white bg container">
+            <div class="section-title">Depoimentos dos nossos clientes</div>
+            <div class="section-description">Veja a opinião de quem já conhece o nosso trabalho</div>
+            <div class="section-body">
+                <div class="section-client--sliders">
+                    <div class="controlsSliders">
+                        <img src="assets/images/next-black.png" alt="">
+                        <img src="assets/images/prev-black.png" alt="">
+                    </div>
+                    <div class="section-client--slide">
+                        <div class="section-slide--contentCliente">
+                            <img src="assets/complementos/avatar.png" alt="client_image" class="section-slide--content--avatar">
+                            <div class="section-slide--content--name">Mercadinho Junior</div>
+                            <div class="section-slide--content--description">José Silva</div>
+                            <img src="assets/images/quote.png" alt="quote_icon" class="section-slide--content--quoteImg">
+                            <div class="section-slide--content--quote">Sistema muito bom. Fácil de usar e sem erros</div>
+                        </div>
+                    </div>
+                    <div class="section-client--slide">
+                        <div class="section-slide--contentCliente">
+                            <img src="complementos/homem1.png" alt="client_image" class="section-slide--content--avatar">
+                            <div class="section-slide--content--name">John Doe</div>
+                            <div class="section-slide--content--description">Head of PR Departament</div>
+                            <img src="assets/images/quote.png" alt="quote_icon" class="section-slide--content--quoteImg">
+                            <div class="section-slide--content--quote">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum</div>
+                        </div>
+                    </div>
+                    <div class="section-client--slide">
+                        <div class="section-slide--contentCliente">
+                            <img src="complementos/mulher1.png" alt="client_image" class="section-slide--content--avatar">
+                            <div class="section-slide--content--name">John Doe</div>
+                            <div class="section-slide--content--description">Head of PR Departament</div>
+                            <img src="assets/images/quote.png" alt="quote_icon" class="section-slide--content--quoteImg">
+                            <div class="section-slide--content--quote">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pointers">
+                    <div class="pointer active"></div>
+                    <div class="pointer"></div>
+                    <div class="pointer"></div>
+                </div>
+            </div>
+        </section> -->
+
+        <!-- AREA DE HAPPY CLIENTS /-->
+
+        <!-- AREA LOCALIZACAO -->
+
+        <section class="location-area">
+            <div class="location-body">
+                <div class="location-body--infos">
+                    <div class="location-body--infos--area">
+                        <div class="location-body--infos--image">
+                            <img src="assets/images/carta.png" alt="">
+                        </div>
+                        <div class="location-body--infos--description">
+                            Bom Jesus da Lapa - Bahia
+                        </div>
+                    </div>
+                    <div class="location-body--infos--area">
+                        <div class="location-body--infos--image">
+                            <img src="assets/images/localizacao.png" alt="">
+                        </div>
+                        <div class="location-body--infos--description">
+                            Centro - Bom Jesus da Lapa
+                        </div>
+                    </div>
+                    <div class="location-body--infos--area">
+                        <div class="location-body--infos--image">
+                            <img src="assets/images/telefone.png" alt="">
+                        </div>
+                        <div class="location-body--infos--description">
+                            (77) 9 9169-1617 OR
+                            (71) 9 9242-3103
+                        </div>
+                    </div>
+                    <div class="location-body--infos--area">
+                        <div class="location-body--infos--image">
+                            <img src="assets/images/arroba.png" alt="">
+                        </div>
+                        <div class="location-body--infos--description">
+                            <a href="mailto:hi@themedept.com">sac@connectsoftware.com.br</a>
+                        </div>
+                    </div>
+                    <div class="location-body--infos--area">
+                        <div class="location-body--infos--image">
+                            <img src="assets/images/web.png" alt="">
+                        </div>
+                        <div class="location-body--infos--description">
+                            www.connectsoftware.com.br/
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AREA LOCALIZACAO / -->
+
+
+        <!-- AREA FOOTER -->
+
+        <footer>
+            <div class="footer-area">
+                <div class="footer-area--infos">
+                    <div class="footer--socials">
+                        <a><img src="assets/images/twitter.png" alt="twitter_icon"></a>
+                        <a><img src="assets/images/linkedin.png" alt="linkedin_icon"></a>
+                        <a><img src="assets/images/facebook.png" alt="facebook_icon"></a>
+                        <a><img src="assets/images/googleplus.png" alt="google_icon"></a>
+                        <a><img src="assets/images/twitter.png" alt="twitter_icon"></a>
+                    </div>
+                </div>
+                <div class="footer-area--infos">
+                    ©Copyrights Connect Software. All Rights Reserved 
+                </div>
+            </div>
+        </footer>
+
+        <!-- AREA FOOTER / -->
+
+        <!-- <div class="modal-container">
+            <div class="imgScreen">
+                <img src="assets/images/tela sistema/tela sistema/pdv.jpg" alt="">
+            </div>
+        </div> -->
+
+    </div><!-- /End Main Wrapper -->
+
+
+
+    <div onclick="scrollBar()" class="btnTop">
+        <img src="assets/images/seta-para-recolher.png" alt="Voltar_ao_topo">
+    </div>
+
+    <!-- =========================
+         SCRIPTS 
+    ============================== -->
+    <script src="assets/js/plugins/jquery1.11.0.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/jquery.easing.1.3.min.js"></script>
+    <script src="assets/js/plugins/modernizr.custom.min.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    <script src="assets/js/plugins/twitter/tweetie.min.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/custom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     
+    
+    <script>
+
+        function enviarEmail() {
+            var nome = document.getElementById("nome");
+            var contato = document.getElementById("contatoTelefone")
+            var email = document.getElementById("email")
+            var msg = document.getElementById("mensagem")
+            var dadosEmail = {
+                nome: nome.value,
+                contato: contato.value,
+                email: email.value,
+                msg: msg.value
+            }
+            axios.post("http://93.188.166.54:8080/email", dadosEmail).then(response => {
+                var nome = document.getElementById("nome").value = "";
+                var contato = document.getElementById("contatoTelefone").value = ""
+                var email = document.getElementById("email").value = ""
+                var msg = document.getElementById("mensagem").value = ""
+            }).catch(err => {
+                console.log(err)
+            })
+        }
+
+
+        function enviarEmailRevenda() {
+            var nome = document.getElementById("nome-revenda");
+            var cnpj = document.getElementById("cnpj-revenda");
+            var contato = document.getElementById("contato-revenda")
+            var email = document.getElementById("email-revenda")
+            var msg = document.getElementById("mensagem-revenda")
+            var dadosEmail = {
+                nome: nome.value,
+                cnpj: cnpj.value,
+                contato: contato.value,
+                email: email.value,
+                msg: msg.value
+            }
+            axios.post("http://93.188.166.54:8080/email-revenda", dadosEmail).then(response => {
+                var nome = document.getElementById("nome-revenda").value = "";
+                var cnpj = document.getElementById("cnpj-revenda").value = "";
+                var contato = document.getElementById("contato-revenda").value = ""
+                var email = document.getElementById("email-revenda").value = ""
+                var msg = document.getElementById("mensagem-revenda").value = ""
+            }).catch(err => {
+                console.log(err)
+            })
+        }
+
+
+
+    </script>
+    <script src="assets/js/script.js"></script>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
